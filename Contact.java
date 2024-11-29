@@ -14,6 +14,11 @@ public class Contact {
         this.state = state;
         this.email = email;
         this.phone = phone;
+
+    }
+
+    @Override
+    public String toString() {
         
     }
 }
