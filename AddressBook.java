@@ -5,11 +5,6 @@ import java.util.Scanner;
 public class AddressBook {
     List<Contact> adBook = new ArrayList<>();
 
-    public void addContact(Contact c1) {
-        adBook.add(c1);
-        System.out.println("Contact is added");
-    }
-
     public void display() {
         System.out.println(adBook);
     }
@@ -32,6 +27,5 @@ public class AddressBook {
         int zip = sc.nextInt();
         Contact c1 = new Contact(name, lname, city, state, email, phone, zip);
         adBook.add(c1);
-        System.out.println("Contact is added");
     }
 }
