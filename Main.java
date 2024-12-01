@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        AddressBook<BussinessContact> a1 = new AddressBook<>();
+        // AddressBook<BussinessContact> a1 = new AddressBook<>();
+        AddressBook<Contact> a1 = new AddressBook<>();
         int i = 1;
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Address book");
@@ -11,7 +12,8 @@ public class Main {
             int input = sc.nextInt();
 
             switch(input) {
-                case 1 -> a1.addContact(createBussinessContact());
+                // case 1 -> a1.addContact(createBussinessContact());
+                case 1 -> a1.addContact(createContact());
                 case 2 -> a1.display();
                 default -> System.out.println("Wrong input");
             }
@@ -38,7 +40,7 @@ public class Main {
         String email = sc.next();
         System.out.println("Enter phone");
         int phone = sc.nextInt();
-        System.out.println("Enter name");
+        System.out.println("Enter zip code");
         int zip = sc.nextInt();
         
         Contact c1 = new Contact(name, lname, city, state, email, phone, zip);
