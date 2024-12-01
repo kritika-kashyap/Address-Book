@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AddressBook {
     List<Contact> adBook = new ArrayList<>();
 
-    public void display(){
+    public void display() {
         System.out.println(adBook);
     }
 
