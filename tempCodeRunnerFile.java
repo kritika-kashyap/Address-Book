@@ -1,1 +1,0 @@
-case 1 -> a1.addContact(createBussinessContact());
