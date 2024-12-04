@@ -14,6 +14,7 @@ public class Contact {
         this.state = state;
         this.email = email;
         this.phone = phone;
+        this.zip = zip;
     }
 
     @Override

@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // AddressBook<BussinessContact> a1 = new AddressBook<>();
-        AddressBook<BussinessContact> a1 = new AddressBook<>();
+        AddressBook<Contact> a1 = new AddressBook<>();
         int i = 1;
-        LinkedListDemo<BussinessContact> l1 = new LinkedListDemo();
+        // LinkedListDemo<BussinessContact> l1 = new LinkedListDemo();
+        LinkedListDemo<Contact> l1 = new LinkedListDemo();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Address book");
         do{
@@ -13,8 +14,8 @@ public class Main {
             int input = sc.nextInt();
 
             switch(input) {
-                case 1 -> a1.addContact(createBussinessContact());
-                // case 1 -> a1.addContact(createContact());
+                // case 1 -> a1.addContact(createBussinessContact());
+                case 1 -> a1.addContact(createContact());
                 case 2 -> a1.display();
                 case 3 -> l1.migrate(a1);
                 case 4 -> l1.printMigratedList();
