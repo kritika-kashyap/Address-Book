@@ -4,6 +4,17 @@ public class Main {
     public static void main(String[] args) {
         // AddressBook<BussinessContact> a1 = new AddressBook<>();
         AddressBook<Contact> a1 = new AddressBook<>();
+        a1.adBook.add(new Contact("Akshitha", "Kulkarni", "Hyd", "Telangana", "abc", 123, 111));
+        a1.adBook.add(new Contact("Angira", "Tiwari", "Mirzapur", "UP", "abc", 123, 111));
+        a1.adBook.add(new Contact("Akshaya", "Nalan", "Guntur", "AP", "abc", 123, 111));
+        a1.adBook.add(new Contact("Praneet", "Darlanka", "Hyd", "Telangana", "abc", 123, 111));
+        a1.adBook.add(new Contact("Akshitha", "Kulkarni", "Hyd", "Telangana", "abc", 123, 111));
+        a1.adBook.add(new Contact("Deepa","Pandey","Haldwani","Uttrakhand","abc",123,111));
+        a1.adBook.add(new Contact("Priya","Chintagunta","Rajahmundry","AndhraPradesh","xyz",123,111));
+        a1.adBook.add(new Contact("Aakriti","Tiwari","Jhansi","Uttar pradesh","abc",145,414));
+        a1.adBook.add(new Contact("Komal","Varshney","ALigarh","UttarPradesh","xyz",123,112));
+        a1.adBook.add(new Contact("Kritika", "Kashyap", "Patiala", "Punjab", "pqr", 345, 333));
+
         int i = 1;
         // LinkedListDemo<BussinessContact> l1 = new LinkedListDemo();
         LinkedListDemo<Contact> l1 = new LinkedListDemo();
@@ -17,7 +28,8 @@ public class Main {
                 // case 1 -> a1.addContact(createBussinessContact());
                 case 1 -> a1.addContact(createContact());
                 case 2 -> a1.display();
-                case 3 -> l1.migrate(a1);
+                // case 3 -> l1.migrate(a1);
+                case 3 -> a1.search();
                 case 4 -> l1.printMigratedList();
                 default -> System.out.println("Wrong input");
             }
